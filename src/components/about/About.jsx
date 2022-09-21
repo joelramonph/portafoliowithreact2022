@@ -1,5 +1,6 @@
 import React from 'react'
 import "./about.css"
+import AwardFi from "../../img/garantia.png"
 
 const About = () => {
   return (
@@ -30,6 +31,16 @@ const About = () => {
                 ducimus! Corporis obcaecati nemo ex quam consequuntur sed? Cum, omnis?
                 ducimus! Corporis obcaecati nemo ex quam consequuntur sed? Cum, omnis?
             </p>
+            <div className="about__award">
+                <img src={AwardFi} alt="" className="img__about-award" />
+                <div className="about__award-texts">
+                 <h4 className="about__award-title">Honor al merito</h4>
+                 <p className="about_award-desc">
+                 lorem hjdhhdhhjdhjj
+                 hbcbbbcbbcjhddhdhdh</p>
+
+                </div>
+            </div>
         </div>
     </div>
   )
