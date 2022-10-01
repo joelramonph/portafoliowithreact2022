@@ -1,12 +1,15 @@
-import React, { useRef } from "react";
+import React, {useContext, useRef } from "react";
 import "./contact.css";
 import Phone from "../../img/llamada-telefonica.png";
 import Email from "../../img/email.png";
 import Location from "../../img/location.png";
+import { ThemeContext } from "../../context";
 
 const Contact = () => {
   const formRef = useRef();
-
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
+  
   const handleSubmit = (e) => {
     e.preventDeafault();
   };
@@ -42,11 +45,12 @@ const Contact = () => {
             praesentium recusandae fugiat sit ipsam inventore!
           </p>
           <form ref={formRef} onSubmit={handleSubmit}>
-            <input type="text" placeholder="Name" name="user_name" />
-            <input type="text" placeholder="Subject" name="user_subject" />
-            <input type="text" placeholder="Email" name="user_email" />
-            <textarea rows="10" placeholder="Message" name="message" />
+            <input style={{backgroundColor: darkMode && "#333"}}  type="text" placeholder="Name" name="user_name" />
+            <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Subject" name="user_subject" />
+            <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Email" name="user_email" />
+            <textarea style={{backgroundColor: darkMode && "#333"}} rows="10" placeholder="Message" name="message" />
             <button>Submit</button>
+            
           </form>
         </div>
       </div>

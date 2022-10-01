@@ -7,7 +7,7 @@
 .contact__bg{
     width: 20px;
     height: 100%;
-    background-color: #39A9CB;
+    background-color: #F1C40F;
     position: absolute;
 }
 
@@ -80,8 +80,8 @@ textarea{
 button{
     border: none;
     padding: 15px;
-    background-color: #59b256;
-    color: white;
+    background-color: #F1C40F;
+    color: #111;
     font-weight: 500;
     cursor: pointer;
 }
