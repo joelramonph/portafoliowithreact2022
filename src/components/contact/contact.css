@@ -104,7 +104,9 @@ button{
         width: 100%;
     }
 
-   
+   .contact__bg{
+       height: 100vh;
+   }
 
     .contact__description{
         display: none;
