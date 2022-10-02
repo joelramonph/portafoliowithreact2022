@@ -1,8 +1,8 @@
 import React, {useContext, useRef } from "react";
 import "./contact.css";
-import Phone from "../../img/llamada-telefonica.png";
-import Email from "../../img/email.png";
-import Location from "../../img/location.png";
+import Phone from "../../img/llamadatelefonica2.png";
+import Email from "../../img/emailColor.png";
+import Location from "../../img/marcador-de-posicion.png";
 import { ThemeContext } from "../../context";
 
 const Contact = () => {
