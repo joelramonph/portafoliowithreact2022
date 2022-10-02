@@ -98,3 +98,28 @@
     right: 0;
 
 }
+
+@media screen and (max-width:480px){
+
+    .intro{
+        flex-direction: column;
+        
+    }
+
+    .intro__left-wrapper{
+       
+      padding: 10px;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 100%;
+
+    
+    }
+
+    .intro__description{
+        display: none;
+    }
+
+    
+}

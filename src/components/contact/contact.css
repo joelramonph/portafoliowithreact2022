@@ -84,4 +84,47 @@ button{
     color: #111;
     font-weight: 500;
     cursor: pointer;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:480px){
+
+    .contact__wrapper{
+        flex-direction: column;
+        padding: 0px 50px;
+        
+    }
+    .contact__title{
+        font-size: 30px;
+    }
+    .contact__info-item{
+        margin: 20px 0px;
+        width: 100%;
+    }
+
+   
+
+    .contact__description{
+        display: none;
+    }
+
+    .form{
+       margin-top: 20px;
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+    }
+    input{
+        width: 35%;
+        height: 40px;
+        margin: 10px;
+        margin-left: 0;
+    }
+    button{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+
+  
 }

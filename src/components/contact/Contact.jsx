@@ -41,7 +41,7 @@ const Contact = () => {
 
         <div className="contact__right">
           <p className="contact__description">
-            <b>Lorem ipsum dolor sit amet</b> consectetur adipisicing elit. Ab,
+            <b>Cuentame tu historia</b> consectetur adipisicing elit. Ab,
             praesentium recusandae fugiat sit ipsam inventore!
           </p>
           <form ref={formRef} onSubmit={handleSubmit}>

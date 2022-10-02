@@ -75,4 +75,26 @@
     margin-bottom: 10px;
 }
 
+@media screen and  (max-width: 400px) {
+    .about{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+    .about__left{
+        width: 100%;
+    }
 
+    .about__card{
+
+        height: 30vh;
+    }
+    .about__card.bg, .about__award{
+        display: none;
+
+    }
+    .about__right{
+        padding: 20px;
+    }
+}
