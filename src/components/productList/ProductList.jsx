@@ -7,10 +7,13 @@ const ProductList = () => {
   return (
     <div className='pl'>
         <div className="pl__texts">
-          <h1 className="pl__title">Create & Inspire. Its</h1>
+          <h1 className="pl__title">Proyectos</h1>
           <p className="pl__desc">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet perspiciatis delectus accusantium deleniti,
-             vitae quibusdam fugit pariatur consequatur debitis voluptates.
+           Estos son algunos proyectos que he realizado
+           en mi carrera como desarrollador web. te invito a mirarlos
+           haciendo click en la tarjeta.
+            
+            
           </p>
         </div>
 
