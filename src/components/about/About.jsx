@@ -17,27 +17,28 @@ const About = () => {
             </div>
         </div>
         <div className="about__right">
-            <h1 className='about__title'>About Me</h1>
+            <h1 className='about__title'>Sobre mi</h1>
 
             <p className='about__sub'>
-                Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Reprehenderit, quo?
-                Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Reprehenderit, quo?
+                Vengo del sector aeronautico, donde labore por mas de 15 años como
+                controlador aereo. Soy autodidadcta de las tecnologias de desarrollo web
+                me gusta leer y contemplar la naturaleza en especial mirar al cielo. 
+                Trabajo con react,redux y nodejs, ademas estoy en un continuo
+                aprendizaje.
+                
             </p>
             <p  className='about__description'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quibusdam 
-                ducimus! Corporis obcaecati nemo ex quam consequuntur sed? Cum, omnis?
-                ducimus! Corporis obcaecati nemo ex quam consequuntur sed? Cum, omnis?
-                ducimus! Corporis obcaecati nemo ex quam consequuntur sed? Cum, omnis?
-            </p>
+                Desarrollo sitios web personales, comercio electrónico, desarrollo
+                de API REST  con Express.
+            </p>c
             <div className="about__award">
                 <img src={AwardFi} alt="" className="img__about-award" />
                 <div className="about__award-texts">
-                 <h4 className="about__award-title">Honor al merito</h4>
+                 <h4 className="about__award-title">Desarrollador Web Full Stack</h4>
                  <p className="about_award-desc">
-                 lorem hjdhhdhhjdhjj
-                 hbcbbbcbbcjhddhdhdh</p>
+                 Acreditación de competencias para el desarrollo de proyectos web:
+                 con React,Redux,NodeJs,Express y Postgress.
+                </p>
 
                 </div>
             </div>

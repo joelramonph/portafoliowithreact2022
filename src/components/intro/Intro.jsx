@@ -8,23 +8,23 @@ const Intro = () => {
     <div className="intro">
       <div className="intro__left">
         <div className="intro__left-wrapper">
-          <h2 className="intro__intro">¡Hola soy</h2>
-          <h1 className="intro__name">Joel Parra!</h1>
+          <h2 className="intro__intro">¡Hola! soy</h2>
+          <h1 className="intro__name">Joel Parra</h1>
           <div className="intro__title">
             <div className="intro__title-wrapper">
-              <div className="intro__title-item">Web Developer Full Stack</div>
-              <div className="intro__title-item">Head Coach</div>
-              <div className="intro__title-item">Arduino Hobbies</div>
-              <div className="intro__title-item">Sales Admistration System</div>
-              <div className="intro__title-item">Content Creator</div>
+              <div className="intro__title-item">Desarrollador Web</div>
+              <div className="intro__title-item">Instructor</div>
+              <div className="intro__title-item">Asesor CRM y ERP</div>
+              <div className="intro__title-item">Aficionado Arduino</div>
             </div>
           </div>
           
             <p className="intro__description">
-            I developer services
-            specialists in e-commerce web solutions
-             and administrative systems, as well as an instructor in the area of
-             educational programming for children and adolescents.
+             Soy desarrollador web, me gusta trabajar  en la creación y mantenimiento
+              de plataformas de comercio electrónico y sistemas administrativos, 
+              además de instructor en el área de programación educativa para niños y
+              adolescentes con Scratch, Arduino y AppInventor.
+            
             </p>
 
         </div>
