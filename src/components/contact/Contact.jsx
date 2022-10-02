@@ -19,7 +19,7 @@ const Contact = () => {
       <div className="contact__bg"></div>
       <div className="contact__wrapper">
         <div className="contact__left">
-          <h1 className="contact__title">Lets talk about your project</h1>
+          <h1 className="contact__title">Cuentame sobre tu idea y te ayudo</h1>
           <div className="contact__info">
             <div className="contact__info-item">
               <img src={Phone} alt="" className="contact__icon" />
@@ -41,14 +41,15 @@ const Contact = () => {
 
         <div className="contact__right">
           <p className="contact__description">
-            <b>Cuentame tu historia</b> consectetur adipisicing elit. Ab,
-            praesentium recusandae fugiat sit ipsam inventore!
+            <b>Cuentame tú idea</b> si puedo ayudarte trabajamos 
+            juntos en el desarrollo. ¿Te parece?
+            
           </p>
           <form ref={formRef} onSubmit={handleSubmit}>
-            <input style={{backgroundColor: darkMode && "#333"}}  type="text" placeholder="Name" name="user_name" />
-            <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Subject" name="user_subject" />
+            <input style={{backgroundColor: darkMode && "#333"}}  type="text" placeholder="Nombre" name="user_name" />
+            <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Asunto" name="user_subject" />
             <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Email" name="user_email" />
-            <textarea style={{backgroundColor: darkMode && "#333"}} rows="10" placeholder="Message" name="message" />
+            <textarea style={{backgroundColor: darkMode && "#333"}} rows="10" placeholder="Mensaje" name="message" />
             <button>Submit</button>
             
           </form>
