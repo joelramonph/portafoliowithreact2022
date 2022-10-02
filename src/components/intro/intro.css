@@ -116,10 +116,16 @@
 
     
     }
+    .intro__title-item{
+
+        font-size: 25px;
+        -ms-flex-align: start;
+    }
 
     .intro__description{
         display: none;
     }
+
 
     
 }
