@@ -20,17 +20,17 @@ const About = () => {
             <h1 className='about__title'>Sobre mi</h1>
 
             <p className='about__sub'>
-                Vengo del sector aeronautico, donde labore por mas de 15 años como
-                controlador aereo. Soy autodidadcta de las tecnologias de desarrollo web
+                Vengo del sector aeronautico, donde labore por más de 15 años como
+                controlador aéreo. Soy autodidadcta de las tecnologías de desarrollo web
                 me gusta leer y contemplar la naturaleza en especial mirar al cielo. 
-                Trabajo con react,redux y nodejs, ademas estoy en un continuo
+                Trabajo con react,redux y nodejs, además estoy en un continuo
                 aprendizaje.
                 
             </p>
             <p  className='about__description'>
                 Desarrollo sitios web personales, comercio electrónico, desarrollo
                 de API REST  con Express.
-            </p>c
+            </p>
             <div className="about__award">
                 <img src={AwardFi} alt="" className="img__about-award" />
                 <div className="about__award-texts">
