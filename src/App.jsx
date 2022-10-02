@@ -1,4 +1,5 @@
-import reactLogo from "./assets/react.svg";
+
+import codeLogo from "./assets/coding.png"
 import "./App.css";
 import { useContext } from "react";
 import Intro from "./components/intro/Intro";

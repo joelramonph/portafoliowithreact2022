@@ -22,7 +22,7 @@ const About = () => {
 
             <p className='about__sub'>
                 Vengo del sector aeronáutico, donde laboré por más de 15 años como
-                controlador aéreo. Soy autodidacta de las tecnologías de desarrollo web,
+                controlador aéreo. Soy autodidacta,
                 me gusta leer y contemplar la naturaleza en especial mirar al cielo. 
                 Trabajo con react, redux y nodejs.
                 
@@ -30,7 +30,7 @@ const About = () => {
             <p  className='about__description'>
                 Desarrollo sitios web personales, comercio electrónico, desarrollo
                 de API REST con Express. Puedo cumplir roles tanto de frontend como
-                en el backend.
+                de backend.
                 
             </p>
             <div className="about__award">
