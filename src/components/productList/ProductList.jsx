@@ -10,7 +10,7 @@ const ProductList = () => {
           <h1 className="pl__title">Proyectos</h1>
           <p className="pl__desc">
            Estos son algunos proyectos que he realizado
-           en mi carrera como desarrollador web. te invito a mirarlos
+           en mi carrera como desarrollador web.<br></br> Te invito a mirarlos
            haciendo click en la tarjeta.
             
             
