@@ -1,17 +1,33 @@
-import React, {useContext, useRef } from "react";
+import React, { useContext, useRef } from "react";
 import "./contact.css";
 import Phone from "../../img/llamadatelefonica2.png";
 import Email from "../../img/emailColor.png";
 import Location from "../../img/marcador-de-posicion.png";
 import { ThemeContext } from "../../context";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const formRef = useRef();
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
-  
+
   const handleSubmit = (e) => {
     e.preventDeafault();
+    emailjs
+      .sendForm(
+        "service_xgzxckd",
+        "template_bubs2aj",
+        form.current,
+        "wcjKLpurk49hmtINn"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
 
   return (
@@ -25,33 +41,50 @@ const Contact = () => {
               <img src={Phone} alt="" className="contact__icon" />
               +584145308265
             </div>
-            
+
             <div className="contact__info-item">
               <img src={Email} alt="" className="contact__icon" />
               joelramonph@gmail.com
             </div>
-            
+
             <div className="contact__info-item">
               <img src={Location} alt="" className="contact__icon" />
               Barinas,Venezuela.
             </div>
-           
           </div>
         </div>
 
         <div className="contact__right">
           <p className="contact__description">
-            <b>Cuentame tú idea</b> si puedo ayudarte trabajamos 
-            juntos en el desarrollo. ¿Te parece?
-            
+            <b>Cuentame tú idea</b> si puedo ayudarte trabajamos juntos en el
+            desarrollo. ¿Te parece?
           </p>
           <form ref={formRef} onSubmit={handleSubmit}>
-            <input style={{backgroundColor: darkMode && "#333"}}  type="text" placeholder="Nombre" name="user_name" />
-            <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Asunto" name="user_subject" />
-            <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Email" name="user_email" />
-            <textarea style={{backgroundColor: darkMode && "#333"}} rows="10" placeholder="Mensaje" name="message" />
+            <input
+              style={{ backgroundColor: darkMode && "#333" }}
+              type="text"
+              placeholder="Nombre"
+              name="user_name"
+            />
+            <input
+              style={{ backgroundColor: darkMode && "#333" }}
+              type="text"
+              placeholder="Asunto"
+              name="user_subject"
+            />
+            <input
+              style={{ backgroundColor: darkMode && "#333" }}
+              type="text"
+              placeholder="Email"
+              name="user_email"
+            />
+            <textarea
+              style={{ backgroundColor: darkMode && "#333" }}
+              rows="10"
+              placeholder="Mensaje"
+              name="message"
+            />
             <button>Submit</button>
-            
           </form>
         </div>
       </div>
