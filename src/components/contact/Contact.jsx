@@ -1,4 +1,4 @@
-import React, { useContext, useRef } from "react";
+import React, { useContext, useRef, useState } from "react";
 import "./contact.css";
 import Phone from "../../img/llamadatelefonica2.png";
 import Email from "../../img/emailColor.png";
@@ -8,6 +8,7 @@ import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const formRef = useRef();
+  const [done, setDone] = useState(false)
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
 
@@ -17,12 +18,13 @@ const Contact = () => {
       .sendForm(
         "service_xgzxckd",
         "template_bubs2aj",
-        form.current,
+        formRef.current,
         "wcjKLpurk49hmtINn"
       )
       .then(
         (result) => {
           console.log(result.text);
+          setDone(true)
         },
         (error) => {
           console.log(error.text);
@@ -85,6 +87,7 @@ const Contact = () => {
               name="message"
             />
             <button>Submit</button>
+            {done && "Gracias tus datos han sido enviados"}
           </form>
         </div>
       </div>
