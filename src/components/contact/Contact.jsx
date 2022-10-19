@@ -14,22 +14,15 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDeafault();
-    emailjs
-      .sendForm(
-        "service_xgzxckd",
-        "template_bubs2aj",
-        formRef.current,
-        "wcjKLpurk49hmtINn"
-      )
+    emailjs.sendForm("service_xgzxckd","template_bubs2aj",e.target,"uwcjKLpurk49hmtINn")
       .then(
-        (result) => {
-          console.log(result.text);
+        (response) => {
+          console.log(response);
           setDone(true)
         },
         (error) => {
-          console.log(error.text);
-        }
-      );
+          console.log(error);
+        });
   };
 
   return (
